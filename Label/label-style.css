@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Prata";
+    src: url("Prata/Prata-Regular.ttf") format("truetype");
+  }
+  
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("Muli/Muli-Regular.woff") format("woff");
+ }
+
+@font-face {
+  font-family: "Muli-SemiBold";
+  src: url("Muli/Muli-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("Muli/Muli-ExtraBold.woff") format("woff");
+}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --main-title-color: rgb(217,149,120);
+    --dark-color: rgb(48,46,47);
+    --clear-color: rgb(244,235,232);
+    --secondary-color:rgb(165,165,165);
+  }
+  
+  /*------------------------------DEBUT DU CODE------------------------------*/
+  
+  body {
+      display: grid;
+      grid-template-columns: 100% ;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+  }
+  /* ------------- HEADER ----------------*/
+  .header {
+    grid-area: header;
+  }
+  
+  
+  /*--------------------- MAIN------------------*/ 
+  
+  
+  .main { 
+    grid-area: main;
+  }
+  
+  .label {
+      display: grid;
+      grid-template-columns: repeat(4, 15%);
+      background-color: rgb( 48, 46, 47);
+      margin: auto;    
+      justify-content: center;
+      height: 400px;
+
+  }
+  .label section {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    margin: auto;
+    font-family: "Muli-Bold", sans-serif;
+  }
+  
+
+  .label img {
+    color: var(--main-title-color);
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+ .label .texte {
+   display: flex;
+   flex-direction: row;
+   column-gap: 20px;
+   align-items: center;
+ }
+
+ .label p {
+   color: white;
+ }
+
+ .label .big-title {
+  font-family: "Prata", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  margin-top: 10px;
+ }
+
+ .label .phrase {
+   font-size: 18px;
+   font-weight: 400;
+ }
+ .label .titre {
+  display: block;
+  font-size: 18px;
+}
+
+  /*------------------------ FOOTER ----------------*/
+  .footer {
+      grid-area: footer;
+  }
+  
