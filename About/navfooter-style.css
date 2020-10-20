@@ -36,6 +36,10 @@ transition: color 0.1s ease-in-out;
 a:hover {text-decoration:none;
 color:var(--subColor);}
 
+#active {color:var(--subColor);
+
+}
+
 /*----- Start Header -----*/
 header {
     background-color: var(--mainColor);
