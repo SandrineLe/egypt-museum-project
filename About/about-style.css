@@ -98,7 +98,7 @@ h5 {
 
         .about__title {line-height:1.5;
             font-family: "Prata";
-            font-size:40px;
+            font-size:32px;
             color: var(--dark-color);
             text-transform:capitalize;
           }
@@ -325,7 +325,7 @@ text-align:left;}
 
 .departements__title {line-height:1.5;
     font-family: "Prata";
-    font-size:40px;
+    font-size:32px;
     color: var(--dark-color);
     text-transform:capitalize;
   }
