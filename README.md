@@ -20,17 +20,16 @@ The Project Composition of 5 Pages:
 
 ## Folder Structure
 
-- CSS
-- Images
-- About.html
-- Contact.html
-- Details.html
-- Details-Event.html
-- Index.html
-- READEME.md
+- Home Page (Home)
+- About (The Museum)
+- Events (What's On)
+- Events Details
+- Contact (Visit)
+- README.md
 
 ## Group:
 
 - Sandrine
 - Emilie
 - Ali
+ 
