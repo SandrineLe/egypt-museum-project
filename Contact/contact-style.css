@@ -1,0 +1,279 @@
+:root {
+    --main-title-color: rgb(217,149,120);
+    --secondary-color:rgb(119,119,119);
+    --dark-color: rgb(48,46,47);
+    --clear-color: rgb(244,235,232);
+  }
+
+*{margin:0;
+padding:0;}
+
+@font-face {
+    font-family: "Prata";
+    src: url("Prata/Prata-Regular.ttf") format("truetype");
+}
+  
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("Muli/Muli-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-SemiBold";
+  src: url("Muli/Muli-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("Muli/Muli-ExtraBold.woff") format("woff");
+}
+
+main {     display:grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows:auto auto;
+         }
+
+  /*|--------------------|
+    |------ CONTACT -----|
+    |--------------------|*/
+    .info-contact {     
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      }
+  
+    
+.i-contact_a {     
+    grid-template-columns: 330px auto 360px;
+    display: grid;
+    grid-gap: 0.8em;
+    justify-content: center;
+    align-self: center;
+    line-height: 0.5;
+    position:relative;
+        margin-bottom:4em;
+    }
+
+
+
+.i-contact__left {  grid-column-start: 1;
+  grid-column-end: 3;
+ }
+        
+             
+.i-contact__left img{width:330px;
+  padding-bottom:2em;
+ }
+      
+
+ .address-schedule {
+  display: flex;
+  width: 100%;
+}
+.address-schedule p{
+  color:var(--secondary-color);
+  font-family: "Muli", sans-serif;
+  font-weight:300;
+  font-size:11px;
+  line-height:2;
+
+      }
+
+      .address-schedule span{
+        color:var(--dark-color);
+        font-family: "Prata";
+        font-weight:300;
+        font-size:15px;
+      
+            }
+
+.address {
+  width: 160px;
+  border-right:1px solid rgb(231, 231, 231);
+}
+
+
+.schedule  {
+  flex: 1;
+  width: 160px;
+padding-left:1em;}
+
+.schedule table {
+  width:100%;
+  }
+
+  .schedule td {
+    height:30px;
+    color:var(--secondary-color);
+    font-family: "Muli", sans-serif;
+    font-weight:300;
+    font-size:11px;
+
+    }
+      
+.schedule table, tr, td {
+  border: none;
+  }
+      
+
+  .i-contact__right {  grid-column-start: 3;
+    grid-column-end: 6;
+   }
+
+  /* ------- FORM ------ */
+  .formparts {
+    display: flex;
+    width: 100%;
+  } 
+  .formparts__right {
+    flex: 1;
+    width: auto;
+    padding-right:0.4em;}
+
+  .formparts__left {
+    width: auto;
+  }
+
+ .form-label{
+    color:var(--dark-color);
+    font-family: "Prata";
+    font-weight:300;
+    font-size:9px;
+    margin:0;
+    padding-top:1em;
+  
+        }
+  
+.btn {margin-top:2em;
+  /* haut | droit | bas | gauche */
+      padding: 1em 3em 1em 3em;
+      border-radius: 5px;
+      background-color:var(--dark-color);
+      border: 1px var(--dark-color);
+      text-align: center;
+      width:fit-content;
+      font-family: "Muli", sans-serif;
+    font-size:10px;
+  text-transform:uppercase;}
+
+  .btn:hover {margin-top:2em;
+    /* haut | droit | bas | gauche */
+    padding: 1em 3em 1em 3em;
+    border-radius: 5px;
+        background-color:var(--main-title-color);
+        border: 1px var(--main-title-color);
+        text-align: center;
+        width:fit-content;
+        font-family: "Muli", sans-serif;
+      font-size:10px;
+    text-transform:uppercase;}
+
+
+  /*|--------------------|
+    |-------- MAP -------|
+    |--------------------|*/
+
+    .map {     
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      padding-bottom:5em;
+      }
+
+
+  /*|-----------------------|
+    |-------- VENUES -------|
+    |-----------------------|*/
+    .other-venues {     
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 5;
+      text-align: center;
+
+      }
+
+      .venue {     
+        grid-template-columns: 100px 253px 253px 253px 100px;
+        display: grid;
+        justify-content: center;
+        position:relative;
+            margin-bottom:4em;
+        }
+
+        .venue img{  width:60px;
+          }
+
+          .venue p {        color:var(--secondary-color);
+            font-family: "Muli", sans-serif;
+            font-weight:300;
+            font-size:11px;
+          padding-top:1em;
+        line-height:2;}
+          .venue p span {        color:var(--dark-color);
+            font-family: "Prata";
+            font-weight:300;
+            font-size:14px;
+            margin:0;}
+
+        .venue__title{
+          color:var(--dark-color);
+          font-family: "Prata";
+          font-weight:300;
+          font-size:20px;
+          margin:0;
+          padding-top:1em;
+          padding-bottom:1em;
+        
+              }
+
+
+    .venue-aus {    line-height:3; 
+      grid-column-start: 2;
+      grid-column-end: 2;
+      border-right:1px solid rgb(231, 231, 231);
+}
+
+
+      .venue-ny {     
+        grid-column-start: 3;
+        grid-column-end: 3;
+        border-right:1px solid rgb(231, 231, 231);
+
+   
+        }
+
+        .venue-ausbis {     
+          grid-column-start: 4;
+          grid-column-end: 4;
+    
+          }
+
+    
+          .chevron-left{            
+          grid-column-start: 1;
+          grid-column-end: 1; 
+          }
+
+ .fa-chevron-left { font-size:12px;
+            color:lightgrey;
+          border:1px solid lightgrey;
+          border-radius:3px;
+          padding:1em 1.3em 1em 1em;
+          margin-top:6em;
+       }
+
+            .chevron-right{            
+               grid-column-start: 5;
+              grid-column-end: 5; 
+             
+               }
+    
+     .fa-chevron-right {font-size:12px;
+      color:lightgrey;
+    border:1px solid lightgrey;
+    border-radius:3px;
+    padding:1em 1em 1em 1.3em;
+    margin-top:6em;
+                }
