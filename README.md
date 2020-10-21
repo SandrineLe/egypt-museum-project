@@ -8,6 +8,8 @@ The Project Composition of 5 Pages:
 - Events > What's On
 - Events Details > When Clicked on an Event
 
+- Link to the page(s) : https://sandrinele.github.io/egypt-museum-project/Home-Page/
+
 ---
 
 ## Tchnology Used Is:
