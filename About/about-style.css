@@ -65,6 +65,7 @@ h5 {
     
     }
 #active {color: var(--main-title-color);}
+a:active {color: var(--main-title-color);}
   /*|------------------|
     |------ ABOUT -----|
     |------------------|*/
