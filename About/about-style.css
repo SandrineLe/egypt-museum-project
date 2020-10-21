@@ -494,6 +494,7 @@ z-index:2;}
     .video__bg {        text-align:center;
         align-content: center;
         height:500px;
+        transform: translate(0,40%);
    }
     
     .video__content{
@@ -593,6 +594,6 @@ background-image: url("images_about/video-2-1.jpg");}
     color: var(--secondary-color);
     text-transform:uppercase;
   }
-  .team__profile img{width:250px;
+  .team__profile img{width:200px;
     padding-bottom:1em;
   }
