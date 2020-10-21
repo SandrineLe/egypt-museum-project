@@ -29,7 +29,7 @@ The Project Composition of 5 Pages:
 
 ## Group:
 
-- Sandrine
-- Emilie
-- Ali
+- Sandrine LÊ
+- Emilie PIERONT
+- Ali MUNDHER
  
