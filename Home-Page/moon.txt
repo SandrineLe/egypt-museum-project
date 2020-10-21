@@ -1,0 +1,598 @@
+.events {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.events_left {
+  flex: 1;
+}
+
+.events_title:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background-color: var(--subColor);
+  height: 2px;
+  width: 10%;
+}
+.events_header {
+  font-family: "Prata", serif;
+  font-size: 45px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.events_left_links .btn_events {
+  width: 65%;
+  padding: 12px;
+  color: var(--mainColor);
+  display: block;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  border: 1px solid #c1b7b2;
+  text-decoration: none;
+  font-family: "Prata", serif;
+  transition: all 0.3s ease-in-out;
+}
+.events_left_links .btn_events:hover {
+  background-color: var(--subColor);
+  color: var(--textColor);
+}
+.events_no {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.events_left_links .btn_events:first-child {
+  position: relative;
+  background-color: var(--subColor);
+  color: var(--textColor);
+}
+.events_line {
+  position: absolute;
+  right: 17px;
+  top: 22px;
+  width: 27%;
+  height: 2px;
+  background-color: var(--textColor);
+}
+.events_last_link {
+  margin: 33px 0;
+  display: block;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #c1b7b2;
+  text-decoration: none;
+}
+.fa-angle-right {
+  float: right;
+}
+
+.events_right {
+  flex: 1;
+}
+.events_right_img_text {
+  display: flex;
+  margin-bottom: 15px;
+}
+.img {
+  flex: 1;
+  position: relative;
+}
+.img:before {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+}
+.info {
+  flex: 2;
+}
+.info_number {
+  color: var(--subColor);
+  font-size: 45px;
+  font-family: "Prata", serif;
+}
+.info_oct {
+  text-transform: uppercase;
+  color: #c1b7b2;
+  font-size: 19px;
+  font-family: "Prata", serif;
+  margin-top: 5px;
+  display: inline-block;
+}
+.thrusday {
+  margin: -3% 0 1px 3%;
+}
+.info_weekned_pra {
+  font-family: "Prata", serif;
+  font-size: 18px;
+  color: var(--mainCOlor);
+  margin-top: 10px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.info_market {
+  margin-top: -5px;
+  color: #c1b7b2;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.info_line {
+  width: 10%;
+  height: 2px;
+  background-color: #c1b7b2;
+  position: relative;
+  top: -3px;
+}
+.info_angle_right {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  left: -89%;
+  color: #c1b7b2;
+}
+.more_details {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c1b7b2;
+  margin-top: -2px;
+  font-size: 14px;
+  position: relative;
+  top: -17px;
+  left: 73px;
+}
+@media (max-width: 767px) {
+  .events {
+    flex-direction: column;
+  }
+  .events_header {
+    font-family: "Prata", serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  .events_left_links .btn_events {
+    width: 100%;
+    padding: 12px;
+    color: var(--mainColor);
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border: 1px solid #c1b7b2;
+    text-decoration: none;
+  }
+  .events_right_img_text {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .events_right_img_text .img {
+    margin-right: 3%;
+  }
+  .events {
+    flex-direction: column;
+  }
+  .events_right {
+    position: relative;
+  }
+  .events_right:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #d6b6a84f;
+    margin-left: 2%;
+    width: 80%;
+    height: 100%;
+  }
+}
+--------------------------------------------
+<div class="container">
+      <div class="events">
+        <div class="events_left">
+          <h5 class="events_title main_title">event</h5>
+          <h2 class="events_header">events & programe schedul</h2>
+          <div class="events_left_links">
+            <a href="" class="btn_events"
+              >01. current <span class="events_line"></span>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+            <a href="" class="btn_events"
+              >02. upcoming
+              <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </a>
+            <a href="" class="btn_events"
+              >03. past
+              <span> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <a href="" class="events_last_link">view all upcoming events +</a>
+        </div>
+        <div class="events_right">
+          <div class="events_right_img_text">
+            <div class="img">
+              <img src="images/event-2-1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="info_number">24</span>
+              <span class="info_oct"
+                >oct
+                <div class="thrusday">thrusday</div></span
+              >
+              <p class="info_weekned_pra">
+                weekend drop-in sessions in sacklar lap
+              </p>
+              <span class="info_market"
+                >48 market st,san fransico, ca 94104</span
+              >
+              <div class="info_line"></div>
+              <i
+                class="fa fa-angle-right info_angle_right"
+                aria-hidden="true"
+              ></i>
+              <a href="" class="more_details">more details</a>
+            </div>
+          </div>
+          <div class="events_right_img_text">
+            <div class="img">
+              <img src="images/event-2-2.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="info_number">06</span>
+              <span class="info_oct"
+                >oct
+                <div class="thrusday">thrusday</div></span
+              >
+              <p class="info_weekned_pra">
+                weekend drop-in sessions in sacklar lap
+              </p>
+              <span class="info_market"
+                >48 market st,san fransico, ca 94104</span
+              >
+              <div class="info_line"></div>
+              <i
+                class="fa fa-angle-right info_angle_right"
+                aria-hidden="true"
+              ></i>
+              <a href="" class="more_details">more details</a>
+            </div>
+          </div>
+          <div class="events_right_img_text">
+            <div class="img">
+              <img src="images/event-2-3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="info_number">24</span>
+              <span class="info_oct"
+                >oct
+                <div class="thrusday">thrusday</div></span
+              >
+              <p class="info_weekned_pra">
+                weekend drop-in sessions in sacklar lap
+              </p>
+              <span class="info_market"
+                >48 market st,san fransico, ca 94104</span
+              >
+              <div class="info_line"></div>
+              <i
+                class="fa fa-angle-right info_angle_right"
+                aria-hidden="true"
+              ></i>
+              <a href="" class="more_details">more details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    -------------------------------
+     <div class="container">
+      <div class="collection">
+        <div class="collection__img">
+          <img src="images/collections-2-1.jpg" alt="" />
+          <h2 class="collection__title">
+            st. catherine <br />
+            alexandaria in prison
+          </h2>
+        </div>
+        <div class="collection__img">
+          <img src="images/collections-2-2.jpg" alt="" />
+          <h2 class="collection__title">alexandaria in prison</h2>
+        </div>
+        <div class="collection__img">
+          <img src="images/collections-2-3.jpg" alt="" />
+          <h2 class="collection__title">the lascaux cave</h2>
+        </div>
+        <div class="collection__img">
+          <img src="images/collections-2-4.jpg" alt="" />
+          <h2 class="collection__title">the lascaux cave</h2>
+        </div>
+        <div class="collection__img">
+          <img src="images/collections-2-5.jpg" alt="" />
+          <h2 class="collection__title">the lascaux cave</h2>
+        </div>
+        <div class="collection__img">
+          <img src="images/collections-2-6.jpg" alt="" />
+          <h2 class="collection__title">the lascaux cave</h2>
+        </div>
+      </div>
+      <div class="collection__last">
+        <span class="collection__line"></span
+        ><i
+          class="fa fa-angle-right collection__right--angle"
+          aria-hidden="true"
+        ></i>
+        <span class="collection__view">view all collection</span>
+      </div>
+    </div>
+
+
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     <div class="events">
+      <div class="events__left">
+        <img src="images/event-bg-1-1.jpg" alt="" />
+        <div class="container">
+          <div class="events__info">
+            <h5 class="events__title">event</h5>
+            <h2 class="events__header">
+              events & <br />
+              program schedule
+            </h2>
+            <div class="events__buttoms">
+              <div class="events__item">
+                01. current
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </div>
+              <div class="events__item">
+                02. upcoming
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+              <div class="events__item">
+                03. past <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h5 class="events__viewall">view all upcoming events +</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="events__right">
+        <div class="events__boxcolor">
+          <div class="events__img_text">
+            <div class="events__img">
+              <img src="images/event-2-1.jpg" alt="" />
+            </div>
+            <div class="events__text">
+              <h2 class="events__twentyfour">24</h2>
+              <h2 class="events__oct">
+                oct <br />
+                thrusday
+              </h2>
+              <p class="events__weekend">
+                weekend drop-in sessions in the sachler lab
+              </p>
+              <span class="events__address"
+                >48 market str, sanfrancisco, cA94104</span
+              >
+              <div class="events__morelink">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                <span>more details</span>
+              </div>
+            </div>
+          </div>
+          <div class="events__img_text">
+            <div class="events__img">
+              <img src="images/event-2-1.jpg" alt="" />
+            </div>
+            <div class="events__text">
+              <h2 class="events__twentyfour">24</h2>
+              <h2 class="events__oct">
+                oct <br />
+                thrusday
+              </h2>
+              <p class="events__weekend">
+                weekend drop-in sessions in the sachler lab
+              </p>
+              <span class="events__address"
+                >48 market str, sanfrancisco, cA94104</span
+              >
+              <div class="events__morelink">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                <span>more details</span>
+              </div>
+            </div>
+          </div>
+          <div class="events__img_text">
+            <div class="events__img">
+              <img src="images/event-2-1.jpg" alt="" />
+            </div>
+            <div class="events__text">
+              <h2 class="events__twentyfour">24</h2>
+              <h2 class="events__oct">
+                oct <br />
+                thrusday
+              </h2>
+              <p class="events__weekend">
+                weekend drop-in sessions in the sachler lab
+              </p>
+              <span class="events__address"
+                >48 market str, sanfrancisco, cA94104</span
+              >
+              <div class="events__morelink">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                <span>more details</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    ///////////////////css//////////////////////////////////
+    .events {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.events__left {
+  flex: 1;
+  position: relative;
+}
+.events__left img {
+  width: 100%;
+}
+.events__info {
+  position: absolute;
+  top: 13%;
+  left: 39%;
+}
+.events__title {
+  color: #90857f;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: relative;
+}
+.events__title:before {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: 0%;
+  width: 12%;
+  height: 2px;
+  background-color: #d99578;
+}
+.events__header {
+  text-transform: capitalize;
+  font-family: "Prata", serif;
+  margin-bottom: 7%;
+}
+.events__item {
+  border: 1px solid #c1b7b2;
+  color: var(--mainColor);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  padding: 13px;
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  font-family: "Prata", serif;
+}
+.events__item i {
+  float: right;
+}
+.events__item:hover {
+  background-color: var(--subColor);
+  color: var(--textColor);
+}
+.events__viewall {
+  text-transform: uppercase;
+  color: #6b6867a8;
+  margin-top: 11%;
+  font-size: 15px;
+  cursor: pointer;
+}
+/*--------- Section Right---------*/
+.events__right {
+  flex: 1;
+  position: relative;
+}
+.events__boxcolor {
+  padding-top: 13%;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  background-color: #c1a79945;
+  width: 100%;
+  height: 100%;
+}
+.events__img_text {
+  margin-bottom: 4%;
+}
+.events__img {
+  flex: 1;
+}
+
+.events__img img {
+  position: relative;
+}
+.events__img img:before {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  background-color: #fff;
+  width: 100%;
+  height: 20px;
+}
+.events__text {
+  flex: 3;
+  margin-top: -19%;
+}
+.events__twentyfour {
+  font-size: 3rem;
+  color: var(--subColor);
+  margin-left: 25%;
+  font-family: "Prata", serif;
+}
+.events__oct {
+  position: relative;
+  margin-top: -7%;
+  left: 34%;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Prata", serif;
+  color: #73706e;
+}
+.events__weekend {
+  font-family: "Prata", serif;
+  font-size: 19px;
+  position: relative;
+  top: -29%;
+  left: 25%;
+  text-transform: capitalize;
+  color: #73706e;
+}
+.events__address {
+  font-size: 16px;
+  position: relative;
+  top: -39%;
+  left: 25%;
+  color: #c1b7b2;
+}
+.events__morelink {
+  position: relative;
+  top: -34%;
+  left: 25%;
+}
+.events__morelink i {
+  margin-right: 1%;
+  color: #c1b7b2;
+}
+.events__morelink span {
+  text-transform: uppercase;
+  color: #c1b7b2;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .events {
+    display: flex;
+    flex-direction: column;
+  }
+  .events__info {
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    padding: 10px;
+  }
+
+  .events__boxcolor {
+    position: relative;
+  }
+  .events__img_text {
+    position: absolute;
+    flex-direction: column;
+  }
+}
