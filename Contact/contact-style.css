@@ -50,7 +50,6 @@ main {     display:grid;
     justify-content: center;
     align-self: center;
     line-height: 0.5;
-    position:relative;
         margin-bottom:4em;
     }
 
